@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Testbeds/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/SampleSceneUnbounded.unity
+    path: Assets/Scenes/Testbeds/SampleSceneUnbounded.unity
     guid: d49e913a117634cdd953337ffbb2080c
   - enabled: 1
     path: Assets/Samples/Netcode for GameObjects/2.2.0/Bootstrap/Scenes/Bootstrap.unity
