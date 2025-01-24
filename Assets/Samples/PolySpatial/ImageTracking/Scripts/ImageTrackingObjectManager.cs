@@ -70,7 +70,7 @@ namespace PolySpatial.Samples
                     var spawnedPrefab = Instantiate(prefab, imageTransform.position, imageTransform.rotation);
                     m_SpawnedPrefabs[guid] = spawnedPrefab;
                     var numberBehavior = spawnedPrefab.GetComponent<NumberBehavior>();
-                    if (numberBehavior != null)
+                    if (numberBehavior != null) 
                         m_SpawnedNumbers[guid] = numberBehavior;
                 }
             }
