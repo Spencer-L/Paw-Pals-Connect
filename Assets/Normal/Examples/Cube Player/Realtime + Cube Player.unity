@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: _autoInitialized
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114226563030493824, guid: cec929e6874b9f34a8ff954244b7e748, type: 3}
+      propertyPath: _normcoreAppSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: 94cbd327e6526410abb2ec50d53d8629, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
