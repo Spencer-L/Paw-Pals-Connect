@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class DogManager : MonoBehaviour
 {
+    public GameObject dog;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,4 +15,14 @@ public class DogManager : MonoBehaviour
     {
         
     }
+
+    public void WhenButtonClicked()
+    {
+        if (dog.activeInHierarchy == true)
+            dog.SetActive(false);
+        else
+            dog.SetActive(true);
+        
+    }
+
 }
