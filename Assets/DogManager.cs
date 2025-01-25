@@ -29,11 +29,12 @@ public class DogManager : MonoBehaviour
     }
 
     // When the button is clicked, toggle the selected dog
-    public void WhenButtonClicked()
+    public void WhenButtonClicked(int index)
     {
         if (dogs.Length == 0) return;
 
-        int selectedIndex = dogDropdown.value;  // Get the selected dog index from the dropdown
+        // int selectedIndex = dogDropdown.value;  // Get the selected dog index from the dropdown
+        int selectedIndex = index;
         GameObject selectedDog = dogs[selectedIndex];  // Get the dog based on dropdown selection
 
         // Toggle the active state of the selected dog

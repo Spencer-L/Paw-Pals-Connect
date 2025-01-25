@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PolySpatial.Samples
 {
@@ -8,6 +9,8 @@ namespace PolySpatial.Samples
         public Action<string, MeshRenderer> WasPressed;
 
         public string ButtonText => m_ButtonText;
+
+        [SerializeField] private UnityEvent toInvoke;
         public MeshRenderer MeshRenderer => m_MeshRenderer;
 
         [SerializeField]
@@ -27,6 +30,7 @@ namespace PolySpatial.Samples
             if (WasPressed != null)
             {
                 WasPressed.Invoke(m_ButtonText, m_MeshRenderer);
+            
             }
         }
     }
