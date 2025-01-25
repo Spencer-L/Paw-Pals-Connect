@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Testbeds/Image Tracking.unity
     guid: b3f6581167532bf48ab18f763a95d289
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Puppy.unity
     guid: 0dfa7bbe5bdae4d3c9774b23db26b2b1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Testbeds/Normcore.unity
     guid: 1e5da88761a1f402c83de2382241d5bd
   m_configObjects:
