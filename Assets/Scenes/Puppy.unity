@@ -2243,6 +2243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 5293635927732855955, guid: 8c4f98b89b12443a8b120fde5adfc6cf, type: 3}
   _userLocation: {fileID: 2121586914}
+  _navManager: {fileID: 1701802645}
 --- !u!1 &1105458448
 GameObject:
   m_ObjectHideFlags: 0

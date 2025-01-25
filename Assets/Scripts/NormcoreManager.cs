@@ -1,12 +1,14 @@
 #if NORMCORE
 
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Normal.Realtime.Examples {
     public class NormcoreManager : MonoBehaviour {
         [SerializeField] private GameObject _prefab;
 
         [SerializeField] private Transform _userLocation;
+        [SerializeField] private NavManager _navManager;
         
         private Realtime _realtime;
 
@@ -27,7 +29,8 @@ namespace Normal.Realtime.Examples {
             };
             // set spawn position to 0.4 meters in front of user
             Vector3 spawnPosition = _userLocation.position + _userLocation.forward * 0.4f;
-            Realtime.Instantiate(_prefab.name, spawnPosition, Quaternion.identity, options);
+            GameObject newPuppy = Realtime.Instantiate(_prefab.name, spawnPosition, Quaternion.identity, options);
+            _navManager.navMeshAgent=newPuppy.GetComponent<NavMeshAgent>();
         }
     }
 }
