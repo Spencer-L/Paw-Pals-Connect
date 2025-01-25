@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fca9d4afb3743274e8f7da14019d7e0b
+timeCreated: 1525190074
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195224
+  packageName: Normcore Free - Multiplayer + Voice Chat for All Platforms
+  packageVersion: 2.12.0
+  assetPath: Assets/Normal/Examples/VR Player/Realtime + VR Player.prefab
+  uploadId: 702488

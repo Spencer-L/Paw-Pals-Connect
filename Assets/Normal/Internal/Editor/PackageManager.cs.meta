@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: da51cf8c2795e431297ad1a1ece46c8d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195224
+  packageName: Normcore Free - Multiplayer + Voice Chat for All Platforms
+  packageVersion: 2.12.0
+  assetPath: Assets/Normal/Internal/Editor/PackageManager.cs
+  uploadId: 702488

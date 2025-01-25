@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0a8a17e32a1aeb74caaab712c4ebd8aa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195224
+  packageName: Normcore Free - Multiplayer + Voice Chat for All Platforms
+  packageVersion: 2.12.0
+  assetPath: Assets/Normal/Examples/Cube Player/Scripts/CubePlayer.cs
+  uploadId: 702488
