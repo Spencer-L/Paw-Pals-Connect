@@ -4269,6 +4269,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
+      propertyPath: m_ButtonText
+      value: Corgi
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578575306821539519, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
+      propertyPath: m_ButtonText
+      value: Chihuahua
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
+      propertyPath: m_ButtonText
+      value: German Shepard
+      objectReference: {fileID: 0}
     - target: {fileID: 5692769232977461440, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: m_text
       value: ' German Shepard'
@@ -4313,6 +4325,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
+      propertyPath: m_ButtonText
+      value: Pug
+      objectReference: {fileID: 0}
     - target: {fileID: 6049466588368183150, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: m_text
       value: Curr
@@ -4320,6 +4336,10 @@ PrefabInstance:
     - target: {fileID: 6999229589778330649, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: m_Name
       value: Dog Selector Dropdown
+      objectReference: {fileID: 0}
+    - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
+      propertyPath: m_ButtonText
+      value: Curr
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
