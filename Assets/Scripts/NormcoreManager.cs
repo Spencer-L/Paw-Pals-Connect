@@ -5,6 +5,8 @@ using UnityEngine;
 namespace Normal.Realtime.Examples {
     public class NormcoreManager : MonoBehaviour {
         [SerializeField] private GameObject _prefab;
+
+        [SerializeField] private Transform _userLocation;
         
         private Realtime _realtime;
 
@@ -23,8 +25,9 @@ namespace Normal.Realtime.Examples {
                 preventOwnershipTakeover = true,    // Prevent other clients from calling RequestOwnership() on the root RealtimeView.
                 useInstance              = realtime // Use the instance of Realtime that fired the didConnectToRoom event.
             };
-            // TODO: Edit spawn location
-            Realtime.Instantiate(_prefab.name, Vector3.up, Quaternion.identity, options);
+            // set spawn position to 0.4 meters in front of user
+            Vector3 spawnPosition = _userLocation.position + _userLocation.forward * 0.4f;
+            Realtime.Instantiate(_prefab.name, spawnPosition, Quaternion.identity, options);
         }
     }
 }
