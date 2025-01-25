@@ -9,29 +9,26 @@ namespace DemoKitStylizedAnimatedDogs
 {
 public class DemoController : MonoBehaviour
 {
-        public GameObject thing;
+    public GameObject newGOActionController;
     [SerializeField] private List<AnimationButton> _buttons;
     [SerializeField] private List<Animator> _animators;
         AIClient aiClient;
-       // public InputField textInput_;
-
         private void Start()
     {
-             thing.GetComponent<AIClient>().textInput_.onValueChanged.AddListener(delegate { myTextChanged(); });
+             newGOActionController.GetComponent<AIClient>().textInput_.onValueChanged.AddListener(delegate { myTextChanged(); });
 
-            if (thing.GetComponent<AIClient>())
+            if (newGOActionController.GetComponent<AIClient>())
             {
-                if (thing.GetComponent<AIClient>().textInput_.text == "")
+                if (newGOActionController.GetComponent<AIClient>().textInput_.text == "")
                 {
-                    // if (thing.GetComponent<AIClient>().currState == "")
                     Debug.Log("yes breath!!!");
                 }
             }
                 foreach (var button in _buttons)
        {
           button.Click += OnAnimationButtonClick;
+                newGOActionController.GetComponent<AIClient>().textInput_.text = "hi";
        }
-            //thing.onValueChanged.AddListener(myTextChanged);
         }
         public void myTextChanged()
         {
