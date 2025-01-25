@@ -13,19 +13,21 @@ public class DemoController : MonoBehaviour
     [SerializeField] private List<AnimationButton> _buttons;
     [SerializeField] private List<Animator> _animators;
         AIClient aiClient;
-      //  public InputField textInput_;
+       // public InputField textInput_;
 
         private void Start()
     {
-            // thing.GetComponent<AIClient>().textInput_.onValueChanged.AddListener(delegate { myTextChanged(); });
+             thing.GetComponent<AIClient>().textInput_.onValueChanged.AddListener(delegate { myTextChanged(); });
 
-            // if (thing.GetComponent<AIClient>())
-            // {
-            //   //  if(thing.GetComponent<AIClient>().textInput_.text== "")
-            //         if (thing.GetComponent<AIClient>().currState == "")
-            //             Debug.Log("yes breath!!!");
-            // }
-       foreach (var button in _buttons)
+            if (thing.GetComponent<AIClient>())
+            {
+                if (thing.GetComponent<AIClient>().textInput_.text == "")
+                {
+                    // if (thing.GetComponent<AIClient>().currState == "")
+                    Debug.Log("yes breath!!!");
+                }
+            }
+                foreach (var button in _buttons)
        {
           button.Click += OnAnimationButtonClick;
        }

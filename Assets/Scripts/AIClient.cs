@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using SocketIOClient;
 using SocketIOClient.Newtonsoft.Json;
 using UnityEngine;
-
+using UnityEngine.UI;
 using Mangrove;
 
 public class AIClient : MonoBehaviour
@@ -20,6 +20,12 @@ public class AIClient : MonoBehaviour
     private MicController micController;
     private BotVoice botVoice;
     private string DEBUG_PREFIX = "[AIClient]";
+
+    [SerializeField]
+    public InputField textInput_;
+
+    [SerializeField]
+    public String currState;
 
     [field: SerializeField] public string api = "ws://127.0.0.1:4000";
 
@@ -48,6 +54,7 @@ public class AIClient : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+        textInput_.text = "";
     }
 
 
@@ -198,6 +205,7 @@ public class AIClient : MonoBehaviour
         socket.On(EVENTS.BOT_RES, (result) =>
         {
             Debug.Log($"bot-response: {result}");
+            textInput_.text = "hi";
             botResponseHandler.Handle(result.GetValue<BotResponse>());
         });
         socket.On(EVENTS.BOT_VOICE, (result) =>

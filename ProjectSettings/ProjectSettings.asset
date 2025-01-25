@@ -854,6 +854,7 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
+    Standalone: NORMCORE
     VisionOS: NORMCORE
   additionalCompilerArguments: {}
   platformArchitecture: {}
