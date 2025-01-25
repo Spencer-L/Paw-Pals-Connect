@@ -27,11 +27,23 @@ public class DemoController : MonoBehaviour
                 foreach (var button in _buttons)
        {
           button.Click += OnAnimationButtonClick;
-                newGOActionController.GetComponent<AIClient>().textInput_.text = "hi";
+              //  newGOActionController.GetComponent<AIClient>().textInput_.text = "hi";
        }
         }
         public void myTextChanged()
         {
+            string command = newGOActionController.GetComponent<AIClient>().textInput_.text;
+            if (command == "angry")
+            {
+                _animators[1].SetInteger("AnimationID", 6);
+
+            }
+            else if (command == "running")
+            {
+                _animators[1].SetInteger("AnimationID", 4);
+
+            }
+
             Debug.Log("wheeeee");
         }
             // We need this signature in order to directly add and remove this method as 

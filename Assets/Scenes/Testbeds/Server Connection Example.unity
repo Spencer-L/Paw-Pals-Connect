@@ -799,7 +799,7 @@ MonoBehaviour:
   autoConnectOnStart: 1
   textInput_: {fileID: 1153156599}
   currState: 
-  api: ws://127.0.0.1:4000
+  api: ws://192.168.1.60:4000
 --- !u!114 &317471668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2087,7 +2087,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1929, y: 0}
+  m_AnchoredPosition: {x: 1980, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153156599
