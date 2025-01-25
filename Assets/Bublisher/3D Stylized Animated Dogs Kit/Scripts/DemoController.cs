@@ -32,15 +32,53 @@ public class DemoController : MonoBehaviour
         }
         public void myTextChanged()
         {
+            Debug.Log("Reached");
             string command = newGOActionController.GetComponent<AIClient>().textInput_.text;
-            if (command == "angry")
+            if (command.Contains("angry"))
             {
-                _animators[1].SetInteger("AnimationID", 6);
+                foreach (var animator in _animators)
+                {
+                    animator.SetInteger("AnimationID", 6);
+                }
+            }
+            else if (command.Contains("running"))
+            {
+                foreach (var animator in _animators)
+                {
+                    animator.SetInteger("AnimationID", 4);
+                }
 
             }
-            else if (command == "running")
+            else if (command.Contains("come"))
             {
-                _animators[1].SetInteger("AnimationID", 4);
+                foreach (var animator in _animators)
+                {
+                    animator.SetInteger("AnimationID", 4);
+                }
+
+            }
+            else if (command.Contains("sit down"))
+            {
+                foreach (var animator in _animators)
+                {
+                    animator.SetInteger("AnimationID", 4);
+                }
+
+            }
+            else if (command.Contains("get ball"))
+            {
+                foreach (var animator in _animators)
+                {
+                    animator.SetInteger("AnimationID", 4);
+                }
+
+            }
+            else if (command.Contains("wag tail"))
+            {
+                foreach (var animator in _animators)
+                {
+                    animator.SetInteger("AnimationID", 4);
+                }
 
             }
 
@@ -59,7 +97,9 @@ public class DemoController : MonoBehaviour
        foreach(var animator in _animators)
        {
           animator.SetInteger("AnimationID",id);
-       }
-    }
+                Debug.Log("id"+id);
+
+            }
+        }
 }
 }

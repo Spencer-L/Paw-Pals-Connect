@@ -205,7 +205,7 @@ public class AIClient : MonoBehaviour
         socket.On(EVENTS.BOT_RES, (result) =>
         {
             Debug.Log($"bot-response: {result}");
-            textInput_.text = "hi";
+            textInput_.text = result.ToString();
             botResponseHandler.Handle(result.GetValue<BotResponse>());
         });
         socket.On(EVENTS.BOT_VOICE, (result) =>
