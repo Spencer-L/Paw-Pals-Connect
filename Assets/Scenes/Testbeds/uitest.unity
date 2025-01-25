@@ -2919,7 +2919,7 @@ GameObject:
   - component: {fileID: 1063048954}
   - component: {fileID: 1063048953}
   m_Layer: 0
-  m_Name: Element_dropdown_item4 (1)
+  m_Name: Element_dropdown_item5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6106,6 +6106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450651868589582}
   - component: {fileID: 919132147663811765}
+  - component: {fileID: 919132147663811766}
   m_Layer: 0
   m_Name: SpatialPanel_UI
   m_TagString: Untagged
@@ -6133,6 +6134,18 @@ MonoBehaviour:
   - Order: 1
     Renderer: {fileID: 548173382}
     ApplyToDescendants: 1
+--- !u!114 &919132147663811766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147663811764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87df20746af5b47d5b9dd3107f8902bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &981248821212984386
 MeshFilter:
   m_ObjectHideFlags: 0
