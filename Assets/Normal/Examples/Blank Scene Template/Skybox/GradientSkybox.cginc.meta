@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 32dae49293cfccd41ad2e2703057bb59
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195224
+  packageName: Normcore Free - Multiplayer + Voice Chat for All Platforms
+  packageVersion: 2.12.0
+  assetPath: Assets/Normal/Examples/Blank Scene Template/Skybox/GradientSkybox.cginc
+  uploadId: 702488

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 037b16391ab0d4ab42069930754d87d2
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195224
+  packageName: Normcore Free - Multiplayer + Voice Chat for All Platforms
+  packageVersion: 2.12.0
+  assetPath: Assets/Normal/Examples/Hoverbird Player/Hoverbird Character/Shaders/Hoverbird
+    Gradient.shader
+  uploadId: 702488

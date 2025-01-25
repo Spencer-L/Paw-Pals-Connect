@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c677004612bf641ff8ae4ac4fb9a1e8f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195224
+  packageName: Normcore Free - Multiplayer + Voice Chat for All Platforms
+  packageVersion: 2.12.0
+  assetPath: Assets/Normal/Examples/Hoverbird Player/Hoverbird Character/Materials/Board
+    Top.mat
+  uploadId: 702488

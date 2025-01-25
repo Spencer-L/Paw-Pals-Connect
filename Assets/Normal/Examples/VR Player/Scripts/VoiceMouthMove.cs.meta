@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 68898f56901f9144c9ffb1f08e8e870c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 195224
+  packageName: Normcore Free - Multiplayer + Voice Chat for All Platforms
+  packageVersion: 2.12.0
+  assetPath: Assets/Normal/Examples/VR Player/Scripts/VoiceMouthMove.cs
+  uploadId: 702488
