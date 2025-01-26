@@ -4,3 +4,13 @@ While augmented reality apps getting you outside and moving like pokemon go and 
 
 We created a narrative app that allows you to raise a puppy. As you interact with the puppy, it uses a large language model to better learn your behavior and interests. It then connects you with other users when you walk around in augmented reality. Your dog can signal if you’re feeling social, not looking to interact, or even go on incognito. 
 
+# Capabilities
+
+- LLM driven behavior
+- Passthrough AR
+- Social XR (Multiplayer for two people to see their pets interact with each other in the same space
+Mesh Generation of the environment)
+- Pathfinding 
+- Semantic Understanding 
+- Toss Objects
+
