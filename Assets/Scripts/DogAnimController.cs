@@ -7,14 +7,12 @@ using Random = UnityEngine.Random;
 public class DogAnimController : MonoBehaviour
 {
     private static readonly int AnimationID = Animator.StringToHash("AnimationID");
-<<<<<<< Updated upstream
     public List<Animator> _animators;
     
-=======
-    [SerializeField] private List<Animator> _animators;
+
+   // [SerializeField] private List<Animator> _animators;
     [SerializeField] private Animator pugAnimator;
 
->>>>>>> Stashed changes
     private int currentDogState = 0;
 
     private string currentBotResponse;
@@ -31,7 +29,7 @@ public class DogAnimController : MonoBehaviour
         currentDogState = 0;
         counterAngry = 0;
     }
-} 
+ 
  /*
 private void Update()
     {
@@ -40,7 +38,7 @@ private void Update()
             animator.SetInteger(AnimationID, currentDogState);
         }
     }*/
-    int  counterAngry,counterRun=0;
+    int  counterRun=0;
     public void ParseCommand()
     {
         // Use regex to parse command ie. ["sit down"]
