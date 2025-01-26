@@ -30,7 +30,7 @@ namespace PolySpatial.Samples
             if (WasPressed != null)
             {
                 WasPressed.Invoke(m_ButtonText, m_MeshRenderer);
-            
+                toInvoke.Invoke();
             }
         }
     }

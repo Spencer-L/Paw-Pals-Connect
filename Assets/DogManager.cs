@@ -5,11 +5,10 @@ using System.Collections.Generic;
 
 public class DogManager : MonoBehaviour
 {
-    public GameObject[] dogs;  // Array to hold different dog GameObjects
+    public List<GameObject> dogs;  // Array to hold different dog GameObjects
     // public Dropdown dogDropdown;  // Reference to the UI Dropdown component
-
-    [SerializeField]
-    private GameObject currentActiveDog;
+    
+    public GameObject currentActiveDog;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +33,7 @@ public class DogManager : MonoBehaviour
     // When the button is clicked, toggle the selected dog
     public void WhenButtonClicked(int index)
     {
-        if (dogs.Length == 0) return;
+        if (dogs.Count == 0) return;
 
         // int selectedIndex = dogDropdown.value;  // Get the selected dog index from the dropdown
         int selectedIndex = index;
@@ -45,6 +44,7 @@ public class DogManager : MonoBehaviour
         {
             currentActiveDog.SetActive(false);
             selectedDog.SetActive(true);
+            currentActiveDog = selectedDog;
         }
     }
 }

@@ -23,7 +23,7 @@ public class NavManager : MonoBehaviour
     public ApplicationReferences appRef;
     [SerializeField] private Transform groundDetectorOrigin;
     [SerializeField] public NavMeshAgent navMeshAgent;
-    [SerializeField] private Animator agentAnimator;
+    public List<Animator> agentAnimators;
     public GameObject navNode;
     public GameObject debugNode;
     public GameObject classifiedDebugNode;
@@ -33,6 +33,8 @@ public class NavManager : MonoBehaviour
     private Vector3 lastFloorPos;
     private bool wantToSit = false;
     private Vector3 seatPos = Vector3.zero;
+    
+    private static readonly int AnimationID = Animator.StringToHash("AnimationID");
 
     enum NavState
     {
@@ -99,9 +101,12 @@ public class NavManager : MonoBehaviour
             Debug.Log(DEBUG_TAG + "Destination: " + navMeshAgent.destination);
             Debug.Log(DEBUG_TAG + "Reached destination");
             navMeshAgent.ResetPath();
-
-            agentAnimator.SetBool(IsWalking, false);
-
+            
+            foreach (var animator in agentAnimators)
+            {
+                animator.SetInteger(AnimationID, 0);
+            }
+            
             if (wantToSit && Vector3.Distance(navMeshAgent.gameObject.transform.position, seatPos) <= 1.0f)
             {
                 wantToSit = false;
@@ -175,7 +180,10 @@ public class NavManager : MonoBehaviour
             navNode = destNode;
 
             // animations
-            agentAnimator.SetBool(IsWalking, true);
+            foreach (var animator in agentAnimators)
+            {
+                animator.SetInteger(AnimationID, 4);
+            }
             navState = NavState.Walking;
 
             if (navMeshAgent.gameObject.GetComponent<Animation>() != null) {
@@ -208,7 +216,10 @@ public class NavManager : MonoBehaviour
         if(DEBUG_DISPLAY_MESH && debugNode) Instantiate(debugNode, destPos, Quaternion.identity);
 
         // animations
-        agentAnimator.SetBool(IsWalking, true);
+        foreach (var animator in agentAnimators)
+        {
+            animator.SetInteger(AnimationID, 4);
+        }
         navState = NavState.Walking;
 
         if (DEBUG_SEAT) Debug.Log(DEBUG_TAG + "Puppy has set destination: " + navMeshAgent.destination + " and is pending path?: " + navMeshAgent.pathPending);
@@ -283,18 +294,15 @@ public class NavManager : MonoBehaviour
                 plane.GetComponent<ARPlane>().classifications == PlaneClassifications.Couch)
             {
                 // Debug.Log("Seat Alignment: " + plane.GetComponent<ARPlane>().alignment);
-                if (plane.GetComponent<ARPlane>().alignment == PlaneAlignment.HorizontalUp)
+                // Debug.Log("Seat is Horizontal Up");
+                Vector3 seatPos = plane.transform.position;
+                Debug.Log(DEBUG_TAG + "Seat plane position: " + seatPos);
+                float distance = Vector3.Distance(seatPos, appRef.camTrans.position);
+                if (distance < minDistance)
                 {
-                    // Debug.Log("Seat is Horizontal Up");
-                    Vector3 seatPos = plane.transform.position;
-                    Debug.Log(DEBUG_TAG + "Seat plane position: " + seatPos);
-                    float distance = Vector3.Distance(seatPos, appRef.camTrans.position);
-                    if (distance < minDistance)
-                    {
-                        nearestSeat = plane;
-                        targetPos = seatPos;
-                        minDistance = distance;
-                    }
+                    nearestSeat = plane;
+                    targetPos = seatPos;
+                    minDistance = distance;
                 }
             }
         }
@@ -340,7 +348,7 @@ public class NavManager : MonoBehaviour
 
     private IEnumerator MoveAgentUpToSeat(Vector3 seatPos)
     {
-        agentAnimator.SetTrigger(DoJump);
+        // agentAnimator.SetTrigger(DoJump);
         navState = NavState.IsJumping;
 
         lastFloorPos = navMeshAgent.gameObject.transform.position;
@@ -439,7 +447,7 @@ public class NavManager : MonoBehaviour
 
     private IEnumerator MoveAgentDownFromSeatThenMove(Vector3 destPos)
     {
-        agentAnimator.SetTrigger(DoJump);
+        // agentAnimator.SetTrigger(DoJump);
         navState = NavState.IsJumping;
 
         // jump down to lastFloorPos
@@ -554,4 +562,10 @@ public class NavManager : MonoBehaviour
             rotationTime += Time.fixedDeltaTime;
         }
     }
+
+    // public void StopCurrentNavigation()
+    // {
+    //     Debug.Log("Stopping current navigation");
+    //     navMeshAgent.ResetPath();
+    // }
 }

@@ -10,6 +10,7 @@ namespace Normal.Realtime.Examples {
         [SerializeField] private Transform _userLocation;
         [SerializeField] private NavManager _navManager;
         [SerializeField] private DogAnimController _dogAnimController;
+        [SerializeField] private DogManager _dogManager;
         
         private Realtime _realtime;
 
@@ -32,12 +33,16 @@ namespace Normal.Realtime.Examples {
             Vector3 spawnPosition = _userLocation.position + _userLocation.forward * 0.4f;
             GameObject newPuppy = Realtime.Instantiate(_prefab.name, spawnPosition, Quaternion.identity, options);
             _navManager.navMeshAgent = newPuppy.GetComponent<NavMeshAgent>();
+            _dogAnimController.audioSource = newPuppy.GetComponent<AudioSource>();
             foreach (Transform child in newPuppy.transform)
             {
                 // Check if the child has the desired tag
                 if (child.CompareTag("Pet"))
                 {
+                    _navManager.agentAnimators.Add(child.GetComponent<Animator>());
                     _dogAnimController._animators.Add(child.GetComponent<Animator>());
+                    _dogManager.dogs.Add(child.gameObject);
+                    if(child.gameObject.activeSelf) _dogManager.currentActiveDog = child.gameObject;
                 }
             }
         }

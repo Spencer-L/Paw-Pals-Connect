@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Testbeds/Normcore.unity
     guid: 1e5da88761a1f402c83de2382241d5bd
+  - enabled: 0
+    path: Assets/Scenes/Testbeds/uitest.unity
+    guid: e1809701c2679457889772ba9fa79c64
   m_configObjects:
     UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: 25e1f68848051c946b9048e8426e646c, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: bb65518a4a80049acbc5e85e70dbbee0, type: 2}

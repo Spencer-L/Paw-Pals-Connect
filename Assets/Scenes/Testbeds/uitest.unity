@@ -4288,118 +4288,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 543450651868589582}
     m_Modifications:
-    - target: {fileID: 556386267024447599, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: m_ButtonText
-      value: Corgi
-      objectReference: {fileID: 0}
-    - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 919132147663811766}
-    - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: WhenButtonClicked
-      objectReference: {fileID: 0}
-    - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DogManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 792402504676372250, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1578575306821539519, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: m_ButtonText
-      value: Chihuahua
-      objectReference: {fileID: 0}
-    - target: {fileID: 1578575306821539519, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1578575306821539519, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1578575306821539519, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 919132147663811766}
-    - target: {fileID: 1578575306821539519, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1578575306821539519, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: WhenButtonClicked
-      objectReference: {fileID: 0}
-    - target: {fileID: 1578575306821539519, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DogManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1578575306821539519, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: m_ButtonText
-      value: German Shepard
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 919132147663811766}
-    - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: WhenButtonClicked
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DogManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871080261440057422, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5692769232977461440, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: m_text
-      value: ' German Shepard'
-      objectReference: {fileID: 0}
     - target: {fileID: 5743951704381634127, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.585
@@ -4441,85 +4341,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: m_ButtonText
-      value: Pug
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 919132147663811766}
-    - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: WhenButtonClicked
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DogManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903235930294587477, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6049466588368183150, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: m_text
-      value: Curr
-      objectReference: {fileID: 0}
     - target: {fileID: 6999229589778330649, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: m_Name
       value: Dog Selector Dropdown
       objectReference: {fileID: 0}
     - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: m_ButtonText
-      value: Curr
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
       propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 919132147663811766}
-    - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: WhenButtonClicked
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DogManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368097036774745686, guid: 13add3b8fa7b24d3f970ff303c11173a, type: 3}
-      propertyPath: toInvoke.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
