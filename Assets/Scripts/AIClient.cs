@@ -20,9 +20,11 @@ public class AIClient : MonoBehaviour
     private MicController micController;
     private BotVoice botVoice;
     private string DEBUG_PREFIX = "[AIClient]";
-
+    
     [SerializeField]
     public InputField textInput_;
+
+    [SerializeField] private DogAnimController dogAnimController;
 
     [SerializeField]
     public String currState;
@@ -54,7 +56,6 @@ public class AIClient : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
-        textInput_.text = "";
     }
 
 
@@ -205,7 +206,7 @@ public class AIClient : MonoBehaviour
         socket.On(EVENTS.BOT_RES, (result) =>
         {
             Debug.Log($"bot-response: {result}");
-            textInput_.text = result.ToString();
+            dogAnimController.SetCurrentBotResponse(result.ToString());
             botResponseHandler.Handle(result.GetValue<BotResponse>());
         });
         socket.On(EVENTS.BOT_VOICE, (result) =>

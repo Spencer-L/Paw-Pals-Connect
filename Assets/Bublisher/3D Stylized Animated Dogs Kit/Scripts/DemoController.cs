@@ -7,33 +7,30 @@ using UnityEngine.UI;
 
 namespace DemoKitStylizedAnimatedDogs 
 {
-public class DemoController : MonoBehaviour
-{
-    public GameObject newGOActionController;
-    [SerializeField] private List<AnimationButton> _buttons;
-    [SerializeField] private List<Animator> _animators;
-        AIClient aiClient;
-        private void Start()
+    public class DemoController : MonoBehaviour
     {
-             newGOActionController.GetComponent<AIClient>().textInput_.onValueChanged.AddListener(delegate { myTextChanged(); });
-
-            if (newGOActionController.GetComponent<AIClient>())
+        public GameObject newGOActionController;
+        [SerializeField] private List<AnimationButton> _buttons;
+        [SerializeField] private List<Animator> _animators;
+        private AIClient aiClient;
+        private void Start()
+        {
+            aiClient = newGOActionController.GetComponent<AIClient>();
+            aiClient.textInput_.onValueChanged.AddListener(delegate { myTextChanged(); });
+            if (aiClient != null)
             {
-                if (newGOActionController.GetComponent<AIClient>().textInput_.text == "")
-                {
-                    Debug.Log("yes breath!!!");
-                }
+                Debug.Log("yes breath!!!");
             }
-                foreach (var button in _buttons)
-       {
-          button.Click += OnAnimationButtonClick;
-              //  newGOActionController.GetComponent<AIClient>().textInput_.text = "hi";
-       }
+            foreach (var button in _buttons)
+            {
+                button.Click += OnAnimationButtonClick;
+                //  newGOActionController.GetComponent<AIClient>().textInput_.text = "hi";
+            }
         }
         public void myTextChanged()
         {
             Debug.Log("Reached");
-            string command = newGOActionController.GetComponent<AIClient>().textInput_.text;
+            string command = aiClient.textInput_.text;
             if (command.Contains("angry"))
             {
                 foreach (var animator in _animators)
@@ -61,7 +58,7 @@ public class DemoController : MonoBehaviour
             {
                 foreach (var animator in _animators)
                 {
-                    animator.SetInteger("AnimationID", 4);
+                    animator.SetInteger("AnimationID", 7);
                 }
 
             }
@@ -84,8 +81,8 @@ public class DemoController : MonoBehaviour
 
             Debug.Log("wheeeee");
         }
-            // We need this signature in order to directly add and remove this method as 
-            // a listener for the onValueChanged event
+        // We need this signature in order to directly add and remove this method as 
+        // a listener for the onValueChanged event
         public void SwitchAnim()
         {
             _animators[1].SetInteger("AnimationID", 1);
@@ -93,13 +90,13 @@ public class DemoController : MonoBehaviour
         }
 
         private void OnAnimationButtonClick(int id)
-    {
-       foreach(var animator in _animators)
-       {
-          animator.SetInteger("AnimationID",id);
+        {
+            foreach(var animator in _animators)
+            {
+                animator.SetInteger("AnimationID",id);
                 Debug.Log("id"+id);
 
             }
         }
-}
+    }
 }
