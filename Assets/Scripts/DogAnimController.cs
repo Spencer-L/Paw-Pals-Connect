@@ -20,24 +20,22 @@ public class DogAnimController : MonoBehaviour
             animator.SetInteger(AnimationID, currentDogState);
         }
     }
-
+    int  counterAngry=0;
     public void ParseCommand()
     {
         // Use regex to parse command ie. ["sit down"]
         string pattern = @"\[\s*\""(.*?)\""\s*\]";
         MatchCollection matches = Regex.Matches(currentBotResponse, pattern);
         string command = "";
-
         foreach (Match match in matches)
         {
             // Extract the content inside ["..."]
             command = match.Groups[1].Value;
         }
-        Debug.Log("[DOG ANIM CONTROLLER]: Parsing command: " + command);
-        if (command == "angry")
+        if (command == "angry"&&counterAngry<2)
         {
-            Debug.Log("[DOG ANIM CONTROLLER]: Angry command detected");
             currentDogState = 6;
+            counterAngry++;
         }
         else if (command == "running")
         {
@@ -45,7 +43,7 @@ public class DogAnimController : MonoBehaviour
         }
         else if (command == "come")
         {
-            currentDogState = 4;
+            currentDogState = 2;
         }
         else if (command == "sit down")
         {
@@ -57,9 +55,13 @@ public class DogAnimController : MonoBehaviour
         }
         else if (command == "wag tail")
         {
-            currentDogState = 4;
+            currentDogState = 1;
         }
-        Debug.Log("wheeeee");
+        else
+        {
+            currentDogState = 0;
+            counterAngry = 0;        
+        }
     }
     
     // Set current bot response
