@@ -1,4 +1,4 @@
-# barabara
+# Paw Pals Connect
 
 While augmented reality apps getting you outside and moving like pokemon go and digimon are on the rise, we noticed a key problem that these apps only encourage you to interact with pre-existing friends or play minigames by yourself. With our product, Capybara, we aim to use Augmented reality to instead broaden your social network and connect you with new people. 
 
