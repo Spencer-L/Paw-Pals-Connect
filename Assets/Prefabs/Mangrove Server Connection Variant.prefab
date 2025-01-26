@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4695925041857432447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6787377178621495856, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: api
+      value: ws://192.168.1.232:4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787377178621495856, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: isDebugging
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3384183
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.012043886
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717670425883158189, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      propertyPath: m_Name
+      value: Mangrove Server Connection Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6787377178621495856, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+    - {fileID: 5674033559398530494, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8717670425883158189, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6928964819769266067}
+    - targetCorrespondingSourceObject: {fileID: 8717670425883158189, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4962305475988521712}
+  m_SourcePrefab: {fileID: 100100000, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+--- !u!1 &4165871309529001426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8717670425883158189, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
+  m_PrefabInstance: {fileID: 4695925041857432447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6928964819769266067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4165871309529001426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e531ed91abbad4b78bf3862312935bb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoConnectOnStart: 1
+  textInput_: {fileID: 0}
+  dogAnimController: {fileID: 0}
+  currState: 
+  api: ws://192.168.1.60:4000
+--- !u!114 &4962305475988521712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4165871309529001426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94829d456543d0245aa33668b2d46dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Disable: 0

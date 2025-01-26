@@ -1067,6 +1067,67 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!1001 &423212827
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3384183
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.012043886
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826386845547863991, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165871309529001426, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: m_Name
+      value: Mangrove Server Connection Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928964819769266067, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
+      propertyPath: dogAnimController
+      value: 
+      objectReference: {fileID: 1232820338}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82f2ba7e43774c1469a92184412cfa2f, type: 3}
 --- !u!1 &463127279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,75 +2095,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1001 &982487320
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6787377178621495856, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: api
-      value: ws://192.168.1.232:4000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787377178621495856, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: autoConnectOnStart
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.3384183
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.012043886
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7354960032820204744, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8717670425883158189, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_Name
-      value: Mangrove Server Connection
-      objectReference: {fileID: 0}
-    - target: {fileID: 8717670425883158189, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a769a5a07fbdd459b81c7774c4b96e0b, type: 3}
 --- !u!1 &999731714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2236,7 @@ MonoBehaviour:
   _prefab: {fileID: 5293635927732855955, guid: 8c4f98b89b12443a8b120fde5adfc6cf, type: 3}
   _userLocation: {fileID: 2121586914}
   _navManager: {fileID: 1701802645}
+  _dogAnimController: {fileID: 1232820338}
 --- !u!1 &1105458448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,6 +2788,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handMenu: {fileID: 172609550}
   m_PolySpatialCameraTransform: {fileID: 2121586914}
+--- !u!1 &1232820337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232820339}
+  - component: {fileID: 1232820338}
+  m_Layer: 0
+  m_Name: Dog Anim Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1232820338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232820337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233ed0fb1cc880542bdecad21180070e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animators: []
+--- !u!4 &1232820339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232820337}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0214761, y: 0.53849524, z: 0.9695041}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1260834559
 GameObject:
   m_ObjectHideFlags: 0
@@ -5483,8 +5521,9 @@ SceneRoots:
   - {fileID: 2450525716015157940}
   - {fileID: 918406393}
   - {fileID: 486695291}
-  - {fileID: 982487320}
+  - {fileID: 423212827}
   - {fileID: 172609551}
   - {fileID: 1135184375}
   - {fileID: 6103221013342591784}
   - {fileID: 1022506946}
+  - {fileID: 1232820339}

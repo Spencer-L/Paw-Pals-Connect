@@ -6,8 +6,7 @@ using UnityEngine;
 public class DogAnimController : MonoBehaviour
 {
     private static readonly int AnimationID = Animator.StringToHash("AnimationID");
-    [SerializeField] private List<Animator> _animators;
-    [SerializeField] private Animator pugAnimator;
+    public List<Animator> _animators;
     
     private int currentDogState = 0;
     
