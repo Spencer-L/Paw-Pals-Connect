@@ -1,14 +1,26 @@
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
 public class DogAnimController : MonoBehaviour
 {
+    private static readonly int AnimationID = Animator.StringToHash("AnimationID");
     [SerializeField] private List<Animator> _animators;
     [SerializeField] private Animator pugAnimator;
     
-    private string currentBotResponse;
+    private int currentDogState = 0;
     
+    private string currentBotResponse;
+
+    private void Update()
+    {
+        foreach (var animator in _animators)
+        {
+            animator.SetInteger(AnimationID, currentDogState);
+        }
+    }
+
     public void ParseCommand()
     {
         // Use regex to parse command ie. ["sit down"]
@@ -25,62 +37,27 @@ public class DogAnimController : MonoBehaviour
         if (command == "angry")
         {
             Debug.Log("[DOG ANIM CONTROLLER]: Angry command detected");
-            // iterate through all animators
-            // for(int i = 0; i < _animators.Count; i++)
-            // {
-            //     Debug.Log("[DOG ANIM CONTROLLER]: iterating animators");
-            //     _animators[i].SetInteger("AnimationID", 6);
-            //     Debug.Log("[DOG ANIM CONTROLLER] animator integer: " + _animators[i].GetInteger("AnimationID"));
-            // }
-            pugAnimator.SetTrigger("Bark");
-            pugAnimator.SetInteger("AnimationID", 6);
-            pugAnimator.Update(0f);
-            Debug.Log("[DOG ANIM CONTROLLER] animator integer: " + pugAnimator.GetInteger("AnimationID"));
-            var parameters = pugAnimator.parameters;
-            foreach (var param in parameters)
-            {   
-                Debug.Log($"Parameter: {param.name}, Type: {param.type}");
-            }
+            currentDogState = 6;
         }
         else if (command == "running")
         {
-            foreach (var animator in _animators)
-            {
-                animator.SetInteger("AnimationID", 4);
-            }
-    
+            currentDogState = 4;
         }
         else if (command == "come")
         {
-            foreach (var animator in _animators)
-            {
-                animator.SetInteger("AnimationID", 4);
-            }
-    
+            currentDogState = 4;
         }
         else if (command == "sit down")
         {
-            foreach (var animator in _animators)
-            {
-                animator.SetInteger("AnimationID", 7);
-            }
-    
+            currentDogState = 7;
         }
         else if (command == "get ball")
         {
-            foreach (var animator in _animators)
-            {
-                animator.SetInteger("AnimationID", 4);
-            }
-    
+            currentDogState = 4;
         }
         else if (command == "wag tail")
         {
-            foreach (var animator in _animators)
-            {
-                animator.SetInteger("AnimationID", 4);
-            }
-    
+            currentDogState = 4;
         }
         Debug.Log("wheeeee");
     }
